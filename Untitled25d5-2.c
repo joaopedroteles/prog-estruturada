@@ -1,108 +1,164 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void main(){
+char nome [50];
+char sexo;
+int idade;
+printf("Digite o nome: \n") ;
+fgets (nome, 50, stdin);
+printf("Digite o sexo: \n") ;
+scanf("%c",&sexo);
+printf ("Digite a idade: \n");
+scanf("%d",&idade);
+
+if(idade<0)
+{
+printf(" Idade menor que 0 nao nasceu \n ");
+}
+if(idade<16)
+{
+printf(" 0 ate 15 anos nao vota \n ");
+}
+
+if(idade==16)
+{
+printf(" voto dos 16 ou 17  anos e opcional \n ");
+}
+
+if(idade==17)
+{
+printf(" voto dos 16 ou 17  anos e opcional \n ");
+}
+if(idade>17)
+{
+printf(" voto com mais de 18 anos e obrigatorio \n ");
+}
+if(idade<65)
+{
+printf(" voto ate 64 anos e obrigatorio \n ");
+}
+if(idade>65)
+{
+printf(" voto 65 anos ou mais opcional \n ");
+}
+if(idade==41)
+{
+printf(" 41 anos parabens ganhou 1 premio \n ");
+}
+if(idade==82)
+{
+printf(" 82 anos ganha 1 premio \n ");
+}
+
+}
+// -------------------------------
+// -------------------------------
+
 /*#include <stdio.h>
 #include <string.h>
 
 int main(){
-	int nom;
-	int num;
-	int end;
-	int cid;
-	int dat;
-	int dat2; 
-	int plac;
-	int mod; 
-	int ano; 
-	int cpf;
-	int mail;
-	int ass;
-	int tel;
+	char nom[30];
+	char num[30];
+	char end[30];
+	char cid[30];
+	char dat[30];
+	char dat2[30]; 
+	char plac[30];
+	char mod[30];
+	char ano[30]; 
+	char cpf[30];
+	char mail[30];
+	char ass[30];
+	char tel[30];
 	
 	printf("Informe o nome completo: \n");
-    scanf("%c",&nom);
-
-	printf("endereco: \n");
-    scanf("%d",&end);
-    
-    	printf("Informe cidade: \n");
-    scanf("%c",&cid);
-    
-	printf("Informe placa carro: \n");
-    scanf("%d",&plac);
-    
-    	printf("Informe modelo carro: \n");
-    scanf("%c",&mod);
-    
-     	printf("Informe seu email: \n");
-    scanf("%d",&mail);
-    
-    printf("Informe sua assinatura: \n");
-    scanf("%c",&ass);
-    
-    	printf("Informe o data de nascimento: \n");
-    scanf("%f",&dat);
-    
-    	printf("Informe o telefone: \n");
-    scanf("%f",&tel);
-    
-    	printf("Informe ano do carro: \n");
-    scanf("%f",&ano);
-    
-    	printf("Informe seu cpf: \n");
-    scanf("%f",&cpf);
-    
-printf("Informe o numero da casa: \n");
-		scanf("%f",&num);
+	gets(nom);
 	
+	printf("endereco: \n");
+	gets(end);
+
+printf("Informe cidade: \n");
+gets(cid);
+
+	printf("Informe placa carro: \n");
+	gets(plac);
+
+    	printf("Informe modelo carro: \n");
+gets(mod);
+     	printf("Informe seu email: \n");
+gets(mail);
+    printf("Informe sua assinatura: \n");
+gets(ass);
+    	printf("Informe o data de nascimento: \n");
+gets(dat);
+    	printf("Informe o telefone: \n");
+gets(tel);
+    	printf("Informe ano do carro: \n");
+gets(ano);
+    	printf("Informe seu cpf: \n");
+gets(cpf);
+printf("Informe o numero da casa: \n");
+gets(num);
+
+system("cls");
+	
+	printf("\n =========================\t\n.");
+    
+    printf("\n seu nome: %s \n",&nom);
     
     printf("\n =========================\t\n.");
     
-    printf("\n seu nome: %c\n",&nom);
+    printf("\n seu endereco: %s \n",&end);
     
     printf("\n =========================\t\n.");
     
-    printf("\n seu endereco: %d",&end);
+    printf("\n seu numero da casa: %s \n",&num);
     
     printf("\n =========================\t\n.");
     
-    printf("\n seu numero da casa: %f",&num);
+    printf("\n cidade: %s \n",&cid);
     
     printf("\n =========================\t\n.");
     
-    printf("\n cidade: %c",&cid);
+    printf("\n data nascimento: %s \n",&dat);
     
     printf("\n =========================\t\n.");
     
-    printf("\n data nascimento: %f",&dat);
-    
-    printf("\n =========================\t\n.");
-    
-    printf("\n seu telefone: %f",&tel);
+    printf("\n seu telefone: %s \n",&tel);
     
 printf("\n =========================\t\n.");
     
-    printf("\n placa: %d",&plac);
+    printf("\n placa: %s \n",&plac);
     
     printf("\n =========================\t\n");
     
-    printf("\n modelo do carro: %c",&mod);
+    printf("\n modelo do carro: %s \n",&mod);
     
     printf("\n =========================\t\n");
     
-    printf("\n ano do carro : %f",&ano);
+    printf("\n ano do carro : %s \n",&ano);
     
     printf("\n =========================\t\n");
     
-    printf("\n cpf: %f",&cpf);
+    printf("\n cpf: %s \n",&cpf);
     
     printf("\n =========================\t\n");
     
-    printf("\n email: %d",&mail);
+    printf("\n email: %s \n",&mail);
     
     printf("\n =========================\t\n");
     
-    printf("\n assinatura: %c",&ass);
+    printf("\n assinatura: %s \n",&ass);
     
     printf("\n =========================\t\n");
-	
+
+
+
+
+  return 0;
 }*/
 
 
