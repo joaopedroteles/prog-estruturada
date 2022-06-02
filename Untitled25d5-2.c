@@ -31,15 +31,11 @@ if(idade==17)
 {
 printf(" voto dos 16 ou 17  anos e opcional \n ");
 }
-if(idade>17)
-{
-printf(" voto com mais de 18 anos e obrigatorio \n ");
-}
 if(idade<65)
 {
-printf(" voto ate 64 anos e obrigatorio \n ");
+printf(" voto 18 ate 64 anos e obrigatorio \n ");
 }
-if(idade>65)
+if(idade<119)
 {
 printf(" voto 65 anos ou mais opcional \n ");
 }
