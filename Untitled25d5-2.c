@@ -233,7 +233,11 @@ char le_valida_operador();
 int main() {
  
 	float n1,n2,result;
-	char op;
+	char op,continuar = 's';
+ 
+ do{
+ printf("Deseja calcular (s/n)?");
+ scanf(" %c",&continuar);
  
 	head(); 
  
@@ -265,37 +269,40 @@ int main() {
  
 		default:
 			printf("OPERADOR INVALIDO");
+			
+			
  
 	}
  
+ }while(result<10 && continuar=='s');
+ 
 	return 0;
 }
- 
 
+
+ 
 void head(){
 	printf("---------------\n");
 	printf("CALC\n");
 	printf("---------------\n");	
 }
  
-
 float soma(float n1, float num2){
 	float resultado;
 	resultado = n1 + num2;
 	return resultado;
 }
  
- 
 char le_valida_operador(){
 	char operador;
 	int cont=0;
 	do{
 		if(cont!=0){
-			printf("-------\nERRO\n-------\n");
+			printf("-------\nERRO,DIGITE UM OPERADOR VALIDO \n-------\n");
 		}
 		scanf(" %c",&operador);	
 		cont++;
 	}while(operador!='+' && operador!='-' && operador!='*' && operador!='/');	
  
 	return operador;
-}*/
+}
