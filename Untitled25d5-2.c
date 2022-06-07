@@ -6,50 +6,50 @@ void main(){
 char nome [50];
 char sexo;
 int idade;
-printf("Digite o nome: \n") ;
-fgets (nome, 50, stdin);
-printf("Digite o sexo: \n") ;
-scanf("%c",&sexo);
+
 printf ("Digite a idade: \n");
 scanf("%d",&idade);
 
-if(idade<0)
+/*
+x- 0 até 15 não vota
+x- 16 ou 17 opcional
+x- 18 até 64 obrigatório
+x- 65 ou mais opcional
+x- Exatamente 41 ganha prêmio 1 (não deverá apresentar obrigatório)
+x- Exatamente 82 ganha prêmio 2 (não deverá apresentar opcional)
+*/
+
+if(idade<=0)
 {
-printf(" Idade menor que 0 nao nasceu \n ");
-}
-if(idade<16)
-{
-printf(" 0 ate 15 anos nao vota \n ");
+printf(" Idade menor que 0 nao nasceu e");
 }
 
-if(idade==16)
-{
-printf(" voto dos 16 ou 17  anos e opcional \n ");
-}
-
-if(idade==17)
-{
-printf(" voto dos 16 ou 17  anos e opcional \n ");
-}
-if(idade<65)
-{
-printf(" voto 18 ate 64 anos e obrigatorio \n ");
-}
-if(idade<119)
-{
-printf(" voto 65 anos ou mais opcional \n ");
-}
-if(idade==41)
-{
-printf(" 41 anos parabens ganhou 1 premio \n ");
-}
-if(idade==82)
-{
-printf(" 82 anos ganha 1 premio \n ");
+if(idade <=64 ){
+	
+if(idade <=15){printf(" nao pode votar \n ");
 }
 else{
-	printf(" idade invalida \n ");
+	
+if(idade == 16 ){printf(" opcional \n ");
 }
+if(idade == 17 ){printf(" opcional \n ");
+}
+
+	if(idade == 41){printf(" 41 ganha premio \n ");
+	}else{
+	printf(" acima de 18 ate 64 obrigatorio \n ");
+	}}}
+	
+	if(idade >=65 ){
+	if(idade == 82){printf(" 82 ganha premio 2 \n ");
+	}else{
+	printf(" 65 ou mais opcional \n ");
+	}}
+
+	
+
+	
+return 0;
 
 }
 // -------------------------------
@@ -254,8 +254,7 @@ int main() {
  
 	switch(op){
 		case '+':
-			result = soma(n1,n2);
-			printf("RESULTADO:   %.1f\n",result); 
+			printf("RESULTADO:   %.1f\n",n1+n2); 
 		break;
 		case '-':
 			printf("RESULTADO:   %.1f\n",n1-n2);
@@ -265,7 +264,7 @@ int main() {
 		break;
 		case '/':
 			printf("RESULTADO:   %.1f\n",n1/n2);
-		break;						
+		break;							
  
 		default:
 			printf("OPERADOR INVALIDO");
@@ -278,8 +277,6 @@ int main() {
  
 	return 0;
 }
-
-
  
 void head(){
 	printf("---------------\n");
